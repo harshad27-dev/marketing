@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "$8M+", label: "Money Raised" },
-  { value: "400+", label: "Our Clients" },
-  { value: "12+", label: "Unicorn Award" },
-  { value: "550+", label: "Project Complete" },
+  { value: "50K+", label: "Tickets Sold" },
+  { value: "300+", label: "Festivals Powered" },
+  { value: "95%", label: "Customer Satisfaction" },
+  { value: "150+", label: "Cities Reached" },
 ];
 
 const fadeUp = {
@@ -33,13 +33,13 @@ const WhyUs = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="text-gray-500 text-sm md:text-base text-center mb-10"
       >
-        Trusted by <span className="font-semibold">400+ Clients</span> and{" "}
-        <span className="font-semibold">20 Companies</span>.
+        Trusted by <span className="font-semibold">Festival Organizers</span> and{" "}
+        <span className="font-semibold">Event Companies</span> worldwide.
       </motion.p>
 
       {/* Company Logos */}
       <div className="flex flex-wrap justify-center gap-10 mb-16">
-        {["starsup", "payscale", "teamtalk", "bestbank", "overlays"].map(
+        {["SunFest", "GrooveNation", "CityCarnival", "BeatBank", "CultureHub"].map(
           (logo, i) => (
             <motion.div
               key={i}
@@ -62,7 +62,7 @@ const WhyUs = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-3xl p-10 md:p-16 max-w-5xl w-full shadow-2xl"
+        className="bg-gradient-to-r from-yellow-500 to-pink-500 text-white rounded-3xl p-10 md:p-16 max-w-5xl w-full shadow-2xl"
       >
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Side */}
@@ -74,7 +74,7 @@ const WhyUs = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-bold mb-8"
             >
-              Why Us?
+              Why Choose Us?
             </motion.h2>
 
             <div className="grid grid-cols-2 gap-6">
@@ -107,16 +107,17 @@ const WhyUs = () => {
             viewport={{ once: true }}
             className="text-sm md:text-base opacity-90 leading-relaxed"
           >
-            Globally, numerous clients have partnered with us for AI consulting.
-            Through their collaboration and our dedicated efforts, we&apos;ve
-            earned several prestigious awards.
+            From local cultural events to large-scale festivals, our marketing tool 
+            helps organizers maximize reach, boost ticket sales, and create 
+            unforgettable experiences. With built-in analytics and smart promotion 
+            features, we make sure your festival shines. 
             <motion.button
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.92 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="mt-6 px-6 py-2 bg-white text-purple-600 font-semibold rounded-full shadow hover:bg-gray-100 transition"
+              className="mt-6 px-6 py-2 bg-white text-pink-600 font-semibold rounded-full shadow hover:bg-gray-100 transition"
             >
-              See All
+              Discover More
             </motion.button>
           </motion.div>
         </div>

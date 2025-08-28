@@ -1,4 +1,4 @@
-import Navbar from '@/component/Navbar'
+import Navbar from '@/component/section/Navbar'
 import AIProjects from '@/component/section/Aisection'
 import ConsultingSection from '@/component/section/Consiltant'
 import ContactSection from '@/component/section/Contact'

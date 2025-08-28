@@ -11,7 +11,7 @@ const testimonials = [
     id: 1,
     name: "Jennie",
     role: "CEO | Ador",
-    image: "/user1.jpg",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
     review:
       "Experience the power of comprehensive data analysis at your fingertips, transforming raw information into actionable insights with ease.",
     rating: 5,
@@ -20,7 +20,7 @@ const testimonials = [
     id: 2,
     name: "Rohan Patel",
     role: "Founder | TechFlow",
-    image: "/user2.jpg",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
     review:
       "This platform completely changed how we scale our business. Super intuitive and powerful!",
     rating: 5,
@@ -29,7 +29,7 @@ const testimonials = [
     id: 3,
     name: "Sophia Lee",
     role: "CMO | Brandify",
-    image: "/user3.jpg",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
     review:
       "From automation to insights, everything works seamlessly. Highly recommended!",
     rating: 4,

@@ -10,7 +10,7 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const ConsultingSection = () => {
+const FestivalSection = () => {
   return (
     <section className="w-full py-20 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       {/* Left Image Card */}
@@ -22,8 +22,8 @@ const ConsultingSection = () => {
         className="relative rounded-2xl overflow-hidden shadow-lg group"
       >
         <Image
-          src="/Images/ai.png" // replace with your image
-          alt="AI Consulting Team"
+          src="/Images/conback.jprg" // replace with your festival/event image
+          alt="Festival Marketing Team"
           width={600}
           height={500}
           className="object-cover w-full h-[400px] rounded-2xl group-hover:scale-105 transition-transform duration-700"
@@ -37,15 +37,15 @@ const ConsultingSection = () => {
             viewport={{ once: true }}
             className="bg-white/10 backdrop-blur-md text-white rounded-xl px-5 py-4 max-w-[70%] sm:max-w-[50%] md:max-w-[40%] border border-white/20 shadow-lg"
           >
-            <h3 className="text-lg font-semibold mb-2">See Our Team</h3>
+            <h3 className="text-lg font-semibold mb-2">Meet Our Partners</h3>
             <p className="text-sm text-gray-200">
-              Discover the architectural and design project team with our best
-              partners.
+              Collaborating with top festival organizers and event partners to
+              create unforgettable celebrations.
             </p>
             <motion.button
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-3 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 text-black hover:bg-purple-500 hover:text-white transition"
+              className="mt-3 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 text-black hover:bg-yellow-500 hover:text-white transition"
             >
               <ArrowRight size={18} />
             </motion.button>
@@ -62,13 +62,13 @@ const ConsultingSection = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-6">
-          Why Choose Us for Your{" "}
-          <span className="text-purple-600">AI Consulting</span> Needs
+          Why Choose Our{" "}
+          <span className="text-yellow-500">Festival Marketing Tool</span>?
         </h2>
         <p className="text-gray-600 mb-8">
-          Our team of AI specialists uses cutting-edge technology to deliver
-          tailor-made solutions. Enhance your business efficiency and innovation
-          with our advanced AI consulting services.
+          We empower event organizers with tools to plan, promote, and manage
+          festivals effortlessly. From boosting ticket sales to engaging
+          audiences, our platform ensures your event is a grand success.
         </p>
 
         {/* Bullet Points */}
@@ -86,17 +86,17 @@ const ConsultingSection = () => {
           }}
         >
           {[
-            "Advanced AI Technology",
-            "GPT Model",
-            "Extensive Expertise",
-            "Precision Matching",
+            "Ready-to-Use Campaign Templates",
+            "Smart Ticket Sales Tracking",
+            "Real-Time Analytics",
+            "Audience Engagement Tools",
           ].map((point, i) => (
             <motion.p
               key={i}
               variants={fadeUp}
               className="flex items-center gap-2"
             >
-              <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
               {point}
             </motion.p>
           ))}
@@ -106,13 +106,13 @@ const ConsultingSection = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-purple-600 transition"
+          className="bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-400 transition"
         >
-          Explore Now
+          Explore Features
         </motion.button>
       </motion.div>
     </section>
   );
 };
 
-export default ConsultingSection;
+export default FestivalSection;

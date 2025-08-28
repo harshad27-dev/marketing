@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const projects = [
-  { title: "AI Based Chatbot", img: "/template/tp1.jpg" },
-  { title: "AI-Powered Online Social Casino Gaming Platform", img: "/template/tp2.jpg" },
-  { title: "A Platform for Safe Home Hunting", img: "/template/tp3.jpg" },
-  { title: "AI Chatbot-Driven Wellness App", img: "/template/tp4.jpg" },
-  { title: "AI-Powered Heat Tape Monitoring System", img: "/template/tp5.jpg" },
-  { title: "Smart Touch Lamps", img: "/template/tp6.jpg" },
+const campaigns = [
+  { title: "Diwali Lights Festival", img: "/template/fest1.jpg" },
+  { title: "Christmas Carnival", img: "/template/fest2.jpg" },
+  { title: "Holi Color Bash", img: "/template/fest3.jpg" },
+  { title: "Summer Music Fest", img: "/template/fest4.jpg" },
+  { title: "Food & Culture Fair", img: "/template/fest5.jpg" },
+  { title: "New Year Celebration", img: "/template/fest6.jpg" },
 ];
 
 // Animation Variants
@@ -26,7 +26,7 @@ const card = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const AIProjects = () => {
+const FestivalCampaigns = () => {
   return (
     <section className="w-full py-16 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Heading */}
@@ -38,12 +38,12 @@ const AIProjects = () => {
         className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold max-w-xl">
-          Revolutionising <span className="text-purple-500">Industries</span>{" "}
-          with Top <span className="text-purple-500">AI Projects</span>
+          Transform Your <span className="text-yellow-500">Festivals</span>{" "}
+          with Stunning <span className="text-yellow-500">Campaigns</span>
         </h2>
         <p className="mt-4 md:mt-0 text-gray-600 max-w-md text-sm md:text-base">
-          Explore AI-Powered Projects Uniquely Designed to Meet Your Business
-          Needs and Drive Innovation.
+          Explore ready-to-use templates and success stories that help you 
+          attract audiences, boost ticket sales, and make every festival unforgettable.
         </p>
       </motion.div>
 
@@ -55,7 +55,7 @@ const AIProjects = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
       >
-        {projects.map((project, i) => (
+        {campaigns.map((campaign, i) => (
           <motion.div
             key={i}
             variants={card}
@@ -65,8 +65,8 @@ const AIProjects = () => {
           >
             {/* Image */}
             <Image
-              src={project.img}
-              alt={project.title}
+              src={campaign.img}
+              alt={campaign.title}
               width={500}
               height={350}
               className="object-cover w-full h-64 rounded-2xl transition-transform duration-700 group-hover:scale-110"
@@ -74,7 +74,7 @@ const AIProjects = () => {
             {/* Text Overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-4 rounded-b-2xl">
               <h3 className="text-white font-medium text-base md:text-lg">
-                {project.title}
+                {campaign.title}
               </h3>
             </div>
           </motion.div>
@@ -84,4 +84,4 @@ const AIProjects = () => {
   );
 };
 
-export default AIProjects;
+export default FestivalCampaigns;

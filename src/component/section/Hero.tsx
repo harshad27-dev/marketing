@@ -27,14 +27,14 @@ const Hero = () => {
         className="absolute inset-0 will-change-transform will-change-opacity"
       >
         <Image
-          src="/Images/background1.jpg"
-          alt="Hero Background"
+          src="/Images/background.jpg"
+          alt="Festival Background"
           fill
           priority
-          className="object-cover"
+          className="object-cover blur-md"
         />
-        {/* Optional: dark overlay to prevent white edges showing on blur */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </motion.div>
 
       {/* Content */}
@@ -48,22 +48,30 @@ const Hero = () => {
           variants={item}
           className="text-4xl md:text-7xl font-bold text-center leading-tight"
         >
-          Explore Innovation with <br />
+          Elevate Your Festival Marketing with <br />
           <motion.span
             variants={item}
             transition={{ type: "spring", stiffness: 80, delay: 0.3 }}
-            className="text-purple-400 inline-block"
+            className="text-yellow-400 inline-block"
           >
-            Expert AI Consulting
+            Smart Campaign Tools
           </motion.span>
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-4 text-lg md:text-xl text-center max-w-2xl"
+          className="mt-4 text-lg md:text-md text-center max-w-2xl"
         >
-          Unlock innovation with our AI consulting. We provide tailored solutions
-          to optimize operations and enhance decision-making.
+          Power Your Festivals with Smarter Marketing.
+        </motion.p>
+
+        <motion.p
+          variants={item}
+          className="mt-4 text-lg md:text-md text-center max-w-2xl"
+        >
+          Plan, promote, and track your festival campaigns with ease. 
+          Our toolkit helps you engage audiences, boost ticket sales, 
+          and make every celebration unforgettable.
         </motion.p>
 
         <motion.button
@@ -71,9 +79,9 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 120 }}
-          className="mt-6 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition"
+          className="mt-6 px-6 py-3 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-300 transition"
         >
-          Get Free Consultant
+          Start Free Trial
         </motion.button>
       </motion.div>
     </section>
